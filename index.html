@@ -2,28 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Order Pizza</title>
+    <title>Asia's Pizzeria</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="jumbotron">
+    <header>
       <h1>Asia's New York Style Pizza</h1>
+    </header>
+    <div class="jumbotron">
+      <h2>Thin Crust or Bust!</h2>
     </div>
     <main class="container">
-      <h2>Thin Crust or Bust!</h2>
       <h3>What are you waiting for? Order Below!</h3><br>
       <form class="order-form">
         <div id="customer-name" class="form-group">
-          <h5> Name: </h5>
+          <h5> Name : </h5>
           <input id="customer-name-input" type="text">
         </div><br>
         <div id="new-pizzas-section">
           <div class="new-pizza">
             <div class="form-group">
-              <h5> Choose Your Size: </h5>
+              <h5> Choose Your Size : </h5>
               <select class="pizza-size-input">
                 <option value = "small">Small</option>
                 <option value = "medium">Medium</option>
@@ -31,7 +34,7 @@
               </select>
             </div><br>
             <div class="pizza-toppings" class="form-group">
-              <h5>Choose Your Toppings (All pies include tomato sauce and mozzerella cheese for no extra cost): </h5>
+              <h5>Choose Your Toppings  (All pies include tomato sauce and mozzerella cheese for no extra cost) : </h5>
               <input type="checkbox" name="topping" value="bell-peppers">  Bell Peppers<br>
               <input type="checkbox" name="topping" value="mushrooms">  Mushrooms<br>
               <input type="checkbox" name="topping" value="spinach">  Spinach<br>
@@ -48,8 +51,10 @@
 
           </div> <!--additional-pizzas close-->
         </div> <!--new-pizzas-section close-->
-        <span id="add-pizza-button" class="btn btn-primary">Add Another Pizza</span><br><br>
-        <button type="submit" class="btn btn-success form-submit">Place Order</button>
+        <div class="buttons">
+          <span id="add-pizza-button" class="btn btn-primary">Add Another Pizza</span><br><br>
+          <button type="submit" class="btn btn-success form-submit">Place Order</button>
+        </div>
       </form><br><br>
       <div class="output">
         <h3>Order Confirmation:</h3>

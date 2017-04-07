@@ -89,9 +89,8 @@ $(document).ready(function(){
     }
     $(".output-order-total").text(customerOne.orderCost);
 
-    // $(".output-name").text(customerOne.name + ", your Order Total is $" + customerOne.orderCost);
     $(".additional-pizzas").text(""); //Clear additional pizza fields
-    // this.reset(); //Reset form
+    this.reset(); //Reset form
 
   }); //Order form submit close
 }); //Doc ready close
