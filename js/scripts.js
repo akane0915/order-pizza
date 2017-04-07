@@ -61,10 +61,9 @@ $(document).ready(function(){
   $("form.order-form").submit(function(event){
     event.preventDefault();
     var nameInput = $("#customer-name-input").val();
-
-    //Create customerOne variable and collect size and toppings inputs for each pizza
     var customerOne = new Customer(nameInput);
-    //New Pizza Loop for multiple pizzas
+
+    //New Pizza Loop for multiple pizzas to collect size and toppings inputs for each pizza
     $(".new-pizza").each(function(event){
       var sizeInput = $(this).find(".pizza-size-input").val();
       var toppingsInput = [];
@@ -77,7 +76,7 @@ $(document).ready(function(){
       //Call prototypes to calculate order cost of newPizza
       newPizza.countToppings();
       newPizza.singlePieCost();
-      customerOne.orderCost += newPizza.cost;
+      customerOne.orderCost += newPizza.cost; //Updates customer's order cost
     }); //New pizza loop close
 
     //Display
@@ -89,8 +88,8 @@ $(document).ready(function(){
     }
     $(".output-order-total").text(customerOne.orderCost);
 
+    //Clear fields
     $(".additional-pizzas").text(""); //Clear additional pizza fields
     this.reset(); //Reset form
-
   }); //Order form submit close
 }); //Doc ready close

@@ -1,17 +1,16 @@
-# _Order Pizza_
+# _Asia's New York Style Pizza_
 
-#### _A web application for a pizza company that allows a user to order a pizza and view the cost after specifying toppings and size. April 7, 2017_
+#### _A web application for a Asia's NY Style Pizza that allows a user to order one or more pizzas and view the total order cost after specifying pizza toppings and size. April 7, 2017_
 
 #### By _**Asia Kane**_
 
 ## Description
 
-This is a web application for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.  The app:
+This is a web application for a pizza company where a user can choose to order a pizza with one or more individual toppings and specify the pizza size.  The user can choose to order more than one pizza by clicking the "Add Another Pizza" button.  The application displays the total order cost when the user clicks submit.  The app:
 
-* Allows the user to choose toppings and size for the pizza they'd like to order.
-* Includes a pizza object constructor with properties for toppings and size.
-* Includes a prototype method for the cost of a pizza depending on the selections chosen.
-
+* Includes a pizza object constructor with properties for toppings, size, number of toppings, and cost.
+* Includes a customer object constructor with properties name, order (array of pizzas), and order cost.
+* Includes a pizza prototype method to calculate cost of a pizza depending on the selections chosen.
 
 ## Specifications
 | Behavior |  Input   |  Output  |
@@ -33,19 +32,14 @@ This is a web application for a pizza company where a user can choose one or mor
 * _Submit changes as pull request to Asia at akane0915 on Github_
 
 ## Known Bugs
-
 _N/A_
 
 ## Support and contact details
-
 _I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
 
 ## Technologies Used
-
 _HTML, CSS, Bootstrap, JavaScript (including objects and prototypes), jQuery, BDD_
 
 ### License
-
 *This software is licensed under the MIT license*
-
 Copyright (c) 2017 **Asia Kane**

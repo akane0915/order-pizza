@@ -13,6 +13,8 @@ h1 {
 h3{
   text-align: center;
   letter-spacing: 0.1em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
 }
 
 h5{
@@ -30,7 +32,8 @@ header{
   text-transform: uppercase;
   letter-spacing: 1.2em;
   background-image: url(../img/jumbotron.jpeg);
-  background-size: 1000px 600px;
+  background-size: 800px auto;
+  /*background-size: 70%;*/
   background-position: center;
   background-repeat: no-repeat;
   min-height: 400px;
