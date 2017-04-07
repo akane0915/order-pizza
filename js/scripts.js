@@ -69,10 +69,10 @@ $(document).ready(function(){
       var sizeInput = $(this).find(".pizza-size-input").val();
       var toppingsInput = [];
       $(this).find(".pizza-toppings input:checkbox[name=topping]:checked").each(function(){
-        toppingsInput.push($(this).val());
+        toppingsInput.push($(this).val()); //Push toppings to toppingsInput array
       });
       var newPizza = new Pizza(sizeInput, toppingsInput);
-      customerOne.order.push(newPizza); //Populates array of pizza is customer order property
+      customerOne.order.push(newPizza); //Populates array of pizzas for customer order property
 
       //Call prototypes to calculate order cost of newPizza
       newPizza.countToppings();
@@ -81,7 +81,17 @@ $(document).ready(function(){
     }); //New pizza loop close
 
     //Display
-    $(".output").text(customerOne.name + ", your Order Total is $" + customerOne.orderCost);
+    $(".output").show();
+    $(".output-name").text(customerOne.name);
+    for (var i = 0; i < customerOne.order.length; i++) {
+      var i;
+      $(".output-order").append("One " + customerOne.order[i].size + " pizza with " + customerOne.order[i].numberOfToppings + " toppings." + '<br>');
+    }
+    $(".output-order-total").text(customerOne.orderCost);
+
+    // $(".output-name").text(customerOne.name + ", your Order Total is $" + customerOne.orderCost);
+    $(".additional-pizzas").text(""); //Clear additional pizza fields
+    // this.reset(); //Reset form
 
   }); //Order form submit close
 }); //Doc ready close
