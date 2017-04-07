@@ -9,17 +9,22 @@ function Customer(name){
 function Pizza(size, toppings){
   this.size = size;
   this.toppings = toppings;
+  this.numberOfToppings;
   this.cost;
 }
 
 //Prototypes
+Pizza.prototype.countToppings = function () {
+  this.numberOfToppings = this.toppings.length;
+}
+
 Pizza.prototype.singlePieCost = function () {
   if (this.size === "small"){
-    this.cost = 12;
+    this.cost = 12 + this.numberOfToppings;
   } else if (this.size === "medium"){
-    this.cost = 15;
+    this.cost = 15 + this.numberOfToppings;
   } else {
-    this.cost = 18;
+    this.cost = 18 + this.numberOfToppings;
   }
 }
 
@@ -40,12 +45,12 @@ $(document).ready(function(){
     var customerOne = new Customer(nameInput);
     customerOne.order.push(pizzaOne);
 
-    //Call prototype to calculate cost of pizzaOne
+    //Call prototypes to calculate cost of pizzaOne
+    pizzaOne.countToppings();
     pizzaOne.singlePieCost();
 
-
     //Display output
-    $(".output").text("Cost = $" + pizzaOne.cost);
+    $(".output").text(customerOne.name + ", your Order Total is $" + pizzaOne.cost);
 
   }); //Order form submit close
 }); //Doc ready close
