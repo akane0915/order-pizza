@@ -20,7 +20,8 @@ This is a web application for a pizza company where a user can choose one or mor
 |The program stores the user input as variables (toppings are stored in an array) | N/A | N/A |
 |The program calculates the base cost of the pizza based on the size selected.  Small = $12, Medium = $15, Large = $18 | Size = Large | Not displayed(Cost = $18)|
 |The program updates the cost of the pizza based on the number of toppings selected.  Each topping is $1 added to the base cost. | Size = Large, Toppings = Bell peppers, Mushrooms, Pesto, Feta cheese | Not displayed(Cost = $22)|
-|The program displays the final cost of the pizza | Name = Asia, Size = Large, Toppings = Bell peppers, Mushrooms, Pesto, Feta cheese | "Order confirmation for Asia: Large Pizza with Bell peppers, Mushrooms, Pesto, Feta cheese.  Total Cost = $22" |
+|The program displays the final cost of the pizza | Name = Asia, Size = Large, Toppings = Bell peppers, Mushrooms, Pesto, Feta cheese | "Order confirmation for Asia: Total Cost = $22" |
+|The program allows the customer to order multiple pizzas| Name = Asia, Number of Pizzas = 2, PizzaOne Size = Large, PizzaOne Toppings = Pepperoni, PizzaTwo Size = Medium, PizzaTwo Toppings = Mushrooms, Bell Peppers, Artichokes| "Order confirmation for Asia: Total Cost = $37"|
 
 ## Setup/Installation Requirements
 

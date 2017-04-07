@@ -20,28 +20,36 @@
           <h5> Name: </h5>
           <input id="customer-name-input" type="text">
         </div><br>
-        <div class= id="pizza-size" "form-group">
-          <h5> Choose Your Size: </h5>
-          <select id="pizza-size-input">
-            <option value = "small">Small</option>
-            <option value = "medium">Medium</option>
-            <option value = "large">Large</option>
-          </select>
-        </div><br>
-        <div id="pizza-toppings" class="form-group">
-          <h5>Choose Your Toppings (All pies include tomato sauce and mozzerella cheese for no extra cost): </h5>
-          <input type="checkbox" name="topping" value="bell-peppers">  Bell Peppers<br>
-          <input type="checkbox" name="topping" value="mushrooms">  Mushrooms<br>
-          <input type="checkbox" name="topping" value="spinach">  Spinach<br>
-          <input type="checkbox" name="topping" value="artichokes">  Artichokes<br>
-          <input type="checkbox" name="topping" value="chicken">  Chicken<br>
-          <input type="checkbox" name="topping" value="pepperoni">  Pepperoni<br>
-          <input type="checkbox" name="topping" value="sausage">  Sausage<br>
-          <input type="checkbox" name="topping" value="pesto">  Pesto<br>
-          <input type="checkbox" name="topping" value="bbq-sauce">  BBQ Sauce<br>
-          <input type="checkbox" name="topping" value="feta-cheese">  Feta Cheese<br>
-        </div>
-        <button type="submit" class="btn btn-info form-submit">Place Order</button>
+        <div id="new-pizzas-section">
+          <div class="new-pizza">
+            <div class="form-group">
+              <h5> Choose Your Size: </h5>
+              <select class="pizza-size-input">
+                <option value = "small">Small</option>
+                <option value = "medium">Medium</option>
+                <option value = "large">Large</option>
+              </select>
+            </div><br>
+            <div class="pizza-toppings" class="form-group">
+              <h5>Choose Your Toppings (All pies include tomato sauce and mozzerella cheese for no extra cost): </h5>
+              <input type="checkbox" name="topping" value="bell-peppers">  Bell Peppers<br>
+              <input type="checkbox" name="topping" value="mushrooms">  Mushrooms<br>
+              <input type="checkbox" name="topping" value="spinach">  Spinach<br>
+              <input type="checkbox" name="topping" value="artichokes">  Artichokes<br>
+              <input type="checkbox" name="topping" value="chicken">  Chicken<br>
+              <input type="checkbox" name="topping" value="pepperoni">  Pepperoni<br>
+              <input type="checkbox" name="topping" value="sausage">  Sausage<br>
+              <input type="checkbox" name="topping" value="pesto">  Pesto<br>
+              <input type="checkbox" name="topping" value="bbq-sauce">  BBQ Sauce<br>
+              <input type="checkbox" name="topping" value="feta-cheese">  Feta Cheese<br>
+            </div><hr>
+          </div><!--new-pizza close-->
+          <div class="additional-pizzas">
+
+          </div> <!--additional-pizzas close-->
+        </div> <!--new-pizzas-section close-->
+        <span id="add-pizza-button" class="btn btn-primary">Add Another Pizza</span><br><br>
+        <button type="submit" class="btn btn-success form-submit">Place Order</button>
       </form>
       <div class="output">
 
