@@ -29,6 +29,16 @@ header{
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.2em;
+  background-image: url(../img/jumbotron.jpeg);
+  background-size: 1000px 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-color: white;
+}
+
+.jumbotron h2{
+  margin-top: 80px;
 }
 
 .buttons{
@@ -38,8 +48,48 @@ header{
 .btn{
   font-family: 'Amatic SC', cursive;
   font-size: 2.5em;
+  background-color: #DCDCDC;
+}
+
+#pizza-form-submit{
+  background-color: #909090;
+  color: white;
+}
+
+#pizza-form-submit:hover{
+  color: black;
 }
 
 .output{
   display: none;
+  text-align: center;
+}
+
+.output h3{
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+}
+
+.output h4{
+  margin: 50px;
+}
+
+.output-order-total{
+  font-size: 1.5em;
+}
+
+.tomato-image{
+  text-align: center;
+  margin: 40px;
+}
+
+footer{
+  background-color: #DCDCDC;
+  text-align: center;
+  letter-spacing: .5em;
+  min-height: 150px;
+}
+
+footer p{
+  padding-top:10px;
 }
